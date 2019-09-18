@@ -40,7 +40,7 @@ nav ul{
 }
 
 .width-md-33{
-    width: 33.3333%;
+    width: 33%;
 }
 
 nav li{
@@ -62,7 +62,7 @@ nav ul a{
 
 /*--- main-------------------------- */
 
-.floarter-section{
+.floater-section{
     float: left;
     min-height: 300px;
     width: 100%;
@@ -74,9 +74,11 @@ nav ul a{
     display:block;
 }
 
-/* .clearfix{ 
-    clear: both; 
-} */
+div img{
+    width: 100%;
+    
+}
+
 
 @media(min-width:540px){
     nav ul li{
@@ -106,6 +108,10 @@ nav ul a{
 @media(min-width:800px){
     .width-lg-25{
         width: 25%;
+    }
+
+    .width-lg-33{
+        width: 33.3333%;
     }
 
     .width-lg-50{

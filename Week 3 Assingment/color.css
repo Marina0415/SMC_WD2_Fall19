@@ -2,7 +2,7 @@
     background-color: darkolivegreen;
 }
 
-.pink{
+.fuggypink{
     background-color: lightcoral;
 }
 
@@ -16,4 +16,16 @@
 
 .transparent{
     background-color: transparent;
+}
+
+.md-fuggypink{
+    background-color: lightcoral;
+}
+
+.md-blue{
+    background-color: darkcyan;
+}
+
+.md-gray{
+    background-color: gray;
 }
