@@ -102,6 +102,10 @@ div img{
     .width-md-33{
         width: 33.3333%;
     }
+
+    img{
+        width: 100%
+    }
 }
 /* -540px break point -*/
 
