@@ -3,7 +3,7 @@ body{
 }
 
 nav{
-    background-color: dimgrey;
+    background-color: #9e9e9e;
     padding:20px 10px;
 }
 
@@ -17,6 +17,7 @@ nav li{
     border-bottom: 1px solid #212529;
     padding:10px 0px;
     margin:10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 nav li:first-child{

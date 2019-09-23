@@ -1,8 +1,10 @@
-ma
+body{
+    margin: 0px;
+}
 
 .floater-section{
     float: left;
-    min-height: 300px;
+    min-height: 500px;
     width: 100%;
 }
 
@@ -16,7 +18,7 @@ ma
      max-width: 100%;
  }
 
- .content{
+.content{ 
      padding: 15px;
  }
 
