@@ -1,2 +1,29 @@
 @import "layout.css";
 @import url(color.css);
+
+/* multi-lline vertical alingment */
+.content-table{
+    
+    display: table;
+}
+
+.content-table p{
+    
+    display:table-cell;
+    vertical-align: middle;
+
+}
+/* block elemrnt wit¥dth and height */
+
+.pos-relative{
+    position: relative
+}
+.v-cnetered-block{
+    
+    margin: 100%;
+    margin-top: 50px;
+    /* transform:  */
+    position: absolute;
+    top:50px;
+    width:100%;
+}
