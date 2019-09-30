@@ -1,10 +1,12 @@
 @import "layout.css";
 @import url(color.css);
+@import "navvar.css";
 
-/* multi-lline vertical alingment */
+/* multi-line vertical alingment */
 .content-table{
     
     display: table;
+    height: 120px;
 }
 
 .content-table p{
@@ -13,17 +15,31 @@
     vertical-align: middle;
 
 }
-/* block elemrnt wit¥dth and height */
+/* block element with known height */
 
 .pos-relative{
-    position: relative
+    position: relative;
 }
-.v-cnetered-block{
+
+/* with unknown height */
+.v-centered-black {
     
-    margin: 100%;
-    margin-top: 50px;
-    /* transform:  */
+    height: 160px;
+    transform: translateY(53%);
     position: absolute;
     top:50px;
     width:100%;
+}
+
+/* for unknown height/width */
+
+.v-h-centered-block{
+    height: 140px;
+    width: 140px;
+
+    position:absolute;
+    top:50%;
+    left:50%;
+
+    transform: translate(-50%,-50%);
 }
