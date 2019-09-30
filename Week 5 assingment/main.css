@@ -1,0 +1,45 @@
+@import url(color.css);
+@import "layout.css";
+@import "navbar.css";
+
+/* multi-line vertical alingment */
+.content-table{
+    
+    display: table;
+    height: 120px;
+}
+
+.content-table p{
+    
+    display:table-cell;
+    vertical-align: middle;
+
+}
+/* block element with known height */
+
+.pos-relative{
+    position: relative;
+}
+
+/* with unknown height */
+.v-centered-black {
+    
+    height: 160px;
+    transform: translateY(53%);
+    position: absolute;
+    top:50px;
+    width:100%;
+}
+
+/* for unknown height/width */
+
+.v-h-centered-block{
+    height: 140px;
+    width: 140px;
+
+    position:absolute;
+    top:50%;
+    left:50%;
+
+    transform: translate(-50%,-50%);
+}
