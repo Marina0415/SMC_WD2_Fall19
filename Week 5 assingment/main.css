@@ -2,6 +2,10 @@
 @import "layout.css";
 @import "navbar.css";
 
+main{
+    background-color: black;
+}
+
 /* multi-line vertical alingment */
 .content-table{
     
@@ -9,11 +13,12 @@
     height: 120px;
 }
 
-.content-table p{
+.content-table p ,h3{
     
     display:table-cell;
     vertical-align: middle;
-
+    color: cornsilk;
+    font-family: Arial, Helvetica, sans-serif;
 }
 /* block element with known height */
 
