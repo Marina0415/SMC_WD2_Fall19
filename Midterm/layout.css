@@ -1,8 +1,18 @@
+.gallery-section{
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
 .floater-section{
     float: left;
-    min-height: 500px;
+    
     width: 100%;
 }
+
+.floater-section>img{
+    padding: 24px 0px 0;
+}
+
 
 .container::after{
     clear:both;
@@ -11,7 +21,7 @@
  } 
 
  img{
-     max-width: 100%;
+     width: 100%;
  }
 
 .content{ 
@@ -63,10 +73,8 @@
          margin: auto;
      }
 
-    .floater-section{
-        min-height: 418px;
-    }
-    }
+   
+    
      .width-lg-25{
          width: 25%;
      }
