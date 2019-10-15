@@ -1,0 +1,27 @@
+.menu-floater-section{
+    float: left;
+    
+}
+h2{
+    
+    font-family: 'Merriweather', serif;
+    color: #6d534f;
+    font-size: 40px;
+    font-weight: bold;
+
+}
+
+.height{
+    height: 224px;
+}
+
+.content-background{
+    padding: 75px;
+}
+
+
+@media(min-width:540px){
+    .content{
+       
+    }
+}

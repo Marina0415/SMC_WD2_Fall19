@@ -1,0 +1,45 @@
+footer{
+    padding: 18px;
+    background-color: rgb(105, 196, 165);
+    text-align: center;
+    
+}
+
+footer img{
+    filter: opacity(82%);
+}
+
+h4{
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    color: #6d534f;
+    font-size: 15px;
+    font-weight: bold;
+
+}
+.facebook{
+    width: 25px;
+}
+
+.twitter{
+    width: 25px;
+}
+
+.footer h4 br{
+    display: none;
+}
+
+@media(min-width:540px){
+    .facebook{
+        width: 4%;
+    }
+    
+    .twitter{
+        width: 4%;
+    }
+
+    .footer h4 br{
+        display: none;
+    }
+   
+}

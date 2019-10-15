@@ -1,8 +1,7 @@
 @import url(layout.css);
 @import "colors.css";
 @import url(navbar.css);
-
-body{
-    margin:0px;
-}
+@import "menu.css";
+@import "contact.css";
+@import "footer.css";
 
