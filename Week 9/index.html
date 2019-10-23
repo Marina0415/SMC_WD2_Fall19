@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Week 9</title>
+</head>
+<body>
+    <header>
+        <nav id="navBar">
+            <button id="colorButton">Color Me!</button>
+        </nav>
+    </header>
+
+    <main>
+        <div id="contentMain">
+            <h1>Hello World!</h1>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+
+    <script>
+        document.getElementById("colorButton").addEventListener("click",function(){
+            console.log("Running");
+            var mainContent = document.getElementById("contentMain");
+            var redComponent = "0";
+            var greenComponent = Math.random()*255;
+            var blueComponent = "255";
+
+            console.log("Red; " + redcomponent);
+            console.log("Green; " + greencomponent);
+            console.log("Blue; " + bluecomponent);
+
+            var RGBString = "rgb(" + redComponent + "," + greenComponent + "," + blueComponent + ")";
+
+            console.log(RGBString);
+            
+            mainContent.style.backgroundColor = RGBString;
+            mainContent.style.height = "768px";
+        });
+
+        document.getElementById("contentMain").style.backgroundColor = "rgb(255,0,0)";
+        
+        alert("Hey, What's your Name?");
+    </script>
+</body>
+</html>
