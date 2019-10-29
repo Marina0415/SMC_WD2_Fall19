@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Week 9 Assignment</title>
+</head>
+<body>
+    <header>
+        <nav id="navBar">
+            <button onclick="fontFamily">Choose Font</button>
+            <button onclick="fontSize">Choose Size</button>
+            <button onclick="fontcolor">Choose Color</button>
+            
+        </nav>
+    </header>
+
+    <main>
+        <div id="contentMain">
+            <h1>Font Selection</h1>
+            
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+
+    <script>
+        /Font button/ 
+        document.getElementById("fontFamily").addEventListener("click",function(){
+            console.log("Running");
+            var mainContent = document.getElementById("contentMain");
+            var fontFamily = ("Times New Roman", "Robot", "Arial", "Courier");
+        
+
+            
+        });
+        /Size button/
+        document.getElementById("fontSize").addEventListener("click",function(){
+            console.log("Running")
+            var fontSize = ("12pt","24pt","36pt","48pt","62pt");
+
+        });
+
+        /Color button/
+        document.getElementById("fontColor").addEventListener("click",function(){
+            console.log("Running");
+            var mainContent = document.getElementById("contentMain");
+            var redComponent = Math.random()*255;
+            var greenComponent = Math.random()*255;
+            var blueComponent = Math.random()*255;
+
+            console.log("Red; " + redcomponent);
+            console.log("Green; " + greencomponent);
+            console.log("Blue; " + bluecomponent);
+
+            var RGBString = "rgb(" + redComponent + "," + greenComponent + "," + blueComponent + ")";
+
+            console.log(RGBString);
+
+            mainContent.style.backgroundColor = RGBString;
+
+        }
+
+        alert("Our very first Java Script written.");
+    </script>
+</body>
+</html>
