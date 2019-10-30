@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Week 10</title>
+</head>
+<body>
+    <main>
+        <section>
+            <img src="https://wp.biologos.org/wp-content/uploads/2016/07/westerlundgalaxy-400x400.jpg" id="imageToSwitch" alt="graxy">
+            <button id="imgToggle">Switch</button>
+        </section>
+
+        <section>
+            <form action="" method="GET">
+                <select id="make">
+                    <option value="bmw">BMW</option>
+                    <option value="audi">Audi</option>
+                    <option value="fiat">FIAT</option>
+                </select>
+                
+                <select id="model">
+
+                </select>
+
+            </form>
+        </section>
+    </main>
+
+    <script>
+        
+        var image2URL = "https://www.filterforge.com/more/help/images/size400.jpg";
+        var image2Alt = "Electric Chaos.";
+        var switchingimage = document.getElementById("imageToSwitch");
+
+        var image1URL = switchingimage.src;
+        var image1Alt = switchingimage.alt;
+
+        document.getElementById("imgToggle").addEventListener('click', function(){
+
+            console.log(image1URL);
+
+            if( switchingimage.src == image2URL){ 
+                switchingimage.src = image1URL;
+                switchingimage.alt = image1URL;
+
+            }
+            else {
+                switchingimage.src = image2URL;
+                switchingimage.alt = image2Alt;
+
+            }
+
+        })
+
+        var makeselect = document.getElementById('make');
+        var modelselect = document.getElementById('model');
+
+        makeselect.addEventListener( 'change', function(){
+            console.log(makeselect.value);
+
+            if(makeselect.value === 'bmw'){
+                modelselect.innerHTML = '<option value="M3">M3</option>\
+                                        <option value="M5">M5</option>\
+                                        <option value="X5">X5</option>';
+            }
+            if(makeselect.value === 'audi'){
+                modelselect.innerHTML = '<option value="S4">S4</option>\
+                                        <option value="AB">AB</option>\
+                                        <option value="RB">RB</option>'
+            }
+            if(makeselect.value === 'fiat'){
+                modelselect.innerHTML = '<option value="500">500</option>\
+                                        <option value="124">Spider</option>\
+                                        <option value="500x">500x</option>'
+            }
+        } ) 
+    </script>
+</body>
+</html>
