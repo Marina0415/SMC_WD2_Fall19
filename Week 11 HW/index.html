@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Week 11 HW</title>
+    <style>
+            main-fild{
+                width: 700px;
+                height: 400px;
+                background-color: lavender;
+            }
+            button[class^='button'] {
+                border: double 2px white;
+                border-radius: 7px;
+                background-color: turquoise;
+        
+            }
+        </style>
+</head>
+<body>
+
+        <div class="buttons">
+            <button role="button" class="buttonAppend">Append</button>
+            <button role="button" class="buttonPrepend">Prepend</button>
+            <button role="button" class="buttonBefore">Before</button>
+            <button role="button" class="buttonAfter">After</button>
+            <button role="button" class="buttonClone">Clone</button>
+            <button role="button" class="buttonRemove">Remove</button>
+    
+        </div>
+        <div class="jquery">
+            
+        </div>
+        
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script>
+            $(document).ready(function(){
+
+                $('.buttonAppend').click(function(){
+                    $('.jquery').append('<p class="R">append</p>');
+                })
+
+                $('.buttonPrepend').click(function(){
+                    $('.jquery').prepend('<h2 class="R">prepend</h2>');
+                })
+
+                $('.buttonBefore').click(function(){
+                    $('.jquery').before('<h1 class="R">before</h1>');
+                })
+
+                $('.buttonAfter').click(function(){
+                    $('.jquery').after('<h1 class="R">after</h1>');
+                })
+
+                $('.buttonClone').click(function(){
+                    $( '.R' ).clone().appendTo('body');
+                })
+
+                $('.buttonRemove').click(function(){
+                    $( '.R' ).remove();
+                })
+
+            });
+        </script>
+    
+</body>
+</html>

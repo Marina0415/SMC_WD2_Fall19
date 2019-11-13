@@ -8,6 +8,12 @@
 </head>
 <body>
     <main>
+        <nav>
+            <ul>
+                <li></li>
+                <li></li>
+            </ul>
+        </nav>
         <section>
             <img src="phoneagraph.png" id="imageToSwitch" alt="phoneagraph">
             <button id="imgToggle">Switch</button>
@@ -26,6 +32,9 @@
                 </select>
 
             </form>
+
+            <p id="pop"></p>
+
         </section>
     </main>
 
@@ -65,16 +74,18 @@
                 categorySelect.innerHTML = '<option value="dance">Dance Pop</option>\
                                         <option value="latin">Latin Pop</option>\
                                         <option value="indie">Indie Pop</option>';
+                categorySelect.innerHTML = 'The Popol Vuh is a creation narrative by the Kiche Maya people of the <a href=""> Yucatan peninsula. The story was originally preserved through oral tradition until approximately 1550 CE when it was written down. '
+
             }
             if(selectionSelect.value === 'rock'){
                 categorySelect.innerHTML = '<option value="alternative">Alternative Rock</option>\
                                         <option value="counry">Country Rock</option>\
-                                        <option value="classic">Classic Rock</option>'
+                                        <option value="classic">Classic Rock</option>';
             }
             if(selectionSelect.value === 'R&B'){
                 categorySelect.innerHTML = '<option value="chilled">Chilled R&B</option>\
                                         <option value="alternative">Alternative R&B</option>\
-                                        <option value="soul">Soul R&B</option>'
+                                        <option value="soul">Soul R&B</option>';
             }
         } ) 
     </script>
