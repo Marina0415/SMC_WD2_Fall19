@@ -1,0 +1,120 @@
+body {
+    margin: 0px; 
+    background-color:#0080007d;
+ }
+ 
+ .floater {
+     float: left;
+     width: 100%;
+ }
+ 
+ .floaterimg {
+     max-width: 100%;
+ }
+
+ .clear{
+     clear:both;
+ }
+
+ .title{
+     width: 100%;
+     height: 100px;
+     position: relative;
+     text-align: center;
+     background-image: url(https://s-media-cache-ak0.pinimg.com/736x/3d/07/70/3d077094a5164044973b706aa7de9026.jpg);
+     background-position: center;
+     font-family: 'Luckiest Guy', cursive;
+     color: honeydew;
+     font-size: 30px;
+     padding: 7px;
+
+ }
+
+ .h1{
+     margin: 0px;
+     padding: 5px;
+     position: absolute;
+     display: block;
+     top:50%;
+     left:50%;
+     transform: translate(-50%,-50%);
+     
+     
+ }
+
+ img{
+     width: 100%;
+ }
+
+ .imgContent{
+     padding: 20px;
+     text-align: center;
+ }
+
+ h2{
+     margin: 0px;
+     color: honeydew;
+     background-color: #adff2f6b;
+     display: inline-block;
+     position: relative;
+     padding: 10px;
+
+ }
+
+ p{
+    margin: 0px;
+    background-color:#adff2f6b;
+    display: none;
+    position: relative;
+    padding: 15px;
+
+ }
+ @media(min-width:540px) {z
+     main{
+         width:540px;
+         margin:auto;
+     }
+
+     .imgContent{
+         height:300px;
+     }
+
+     p{
+         position: absolute;
+         transform: rotateX(10px);
+     }
+
+     .w-md-33{
+         width: 33.3333%;
+     }
+
+     .w-md-50{
+         width: 50%;
+     }
+
+ }
+
+ @media(min-width:800px) {
+    main{
+        width:800px;
+        margin:auto;
+    }
+
+    .imgContent{
+        height:300px;
+    }
+
+    p{
+        position: absolute;
+        transform: rotateX(10px);
+    }
+
+    .w-lg-33{
+        width: 33.3333%;
+    }
+
+    .w-lg-50{
+        width: 50%;
+    }
+
+ }
