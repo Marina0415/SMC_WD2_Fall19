@@ -1,0 +1,12 @@
+.grid-layout{
+    display: grid;
+    grid-template: Ifr Ifr Ifr;
+    grid-template-rows: Ifr Ifr;
+
+}
+
+.grif-item{
+    width: 100%;
+    height: 100px;
+    background-color: burlywood;
+}
